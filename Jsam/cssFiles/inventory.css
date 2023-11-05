@@ -1,0 +1,48 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url('../image/LRC2.png');
+    background-size: cover; /* Adjust as needed */
+    background-repeat: no-repeat;
+}
+
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.pagination a {
+    display: inline-block;
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    text-decoration: none;
+    color: #333;
+}
+
+.pagination a.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.pagination a:hover {
+    background-color: #ddd;
+}
+
+/* Hover for Edit, View, Delete */
+.btn-custom {
+    margin: 0 5px; /* Add some space between buttons */
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Add hover effect */
+.btn-custom:hover {
+    transform: scale(1.25); /* Scale the button on hover */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+

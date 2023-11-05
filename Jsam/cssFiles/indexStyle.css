@@ -1,0 +1,220 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #3586ff;
+  
+  }
+  
+  .container {
+    background-color: rgba(255, 255, 255, 0.7);
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px 50px 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+  
+  }
+
+  h2 {
+    text-align: center;
+  }
+
+  input[type="text"],
+  input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+  }
+
+  button {
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .register-link {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  .register-link a {
+    color: #007bff;
+    text-decoration: none;
+  }
+
+  /* Animation design CSS */
+.container {
+  position: relative;
+  animation: slideIn 1.5s ease-out forwards;
+}
+
+@keyframes slideIn {
+            0% {
+                opacity: 0;
+                transform: translateX(-100%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(0);
+            }
+}
+
+.upper-left-content{
+  position: relative;
+  animation: slide 1.5s ease-out forwards;
+}
+
+@keyframes slide {
+  0% {
+      opacity: 0;
+      transform: translateX(-100%);
+  }
+  100% {
+      opacity: 1;
+      transform: translateX(0);
+  }
+}
+
+/* hover design to become large */
+.upper-left-content {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.upper-left-content a img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.upper-left-content a:hover img {
+  transform: scale(1.25);
+}
+
+/* Error Message */
+.error-message {
+    display: flex;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ffcccc;
+    color: #ff0000;
+    padding: 5px;
+    border: 1px solid #ff0000;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.upper-left-content {
+  position: absolute;
+  top: 5%;
+  left: 14%;
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+span{
+  font-size: 50px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+/* wave animation */
+
+section .wave 
+{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background: url(../image/wave.png);
+  background-size: 1000px 100px;
+}
+
+section .wave.wave1
+{
+  animation: animate 30s linear infinite;
+  z-index: 1000;
+  opacity: 1;
+  animation-delay: 0s;
+  bottom: 0;
+}
+
+section .wave.wave2
+{
+  animation: animate2 15s linear infinite;
+  z-index: 999;
+  opacity: 0.5;
+  animation-delay: -5s;
+  bottom: 10px;
+}
+
+section .wave.wave3
+{
+  animation: animate 30s linear infinite;
+  z-index: 998;
+  opacity: 0.2;
+  animation-delay: -2s;
+  bottom: 15px;
+}
+
+section .wave.wave4
+{
+  animation: animate2 5s linear infinite;
+  z-index: 997;
+  opacity: 0.7;
+  animation-delay: -5s;
+  bottom: 20px;
+}
+
+@keyframes animate 
+{
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: 1000px;
+  }
+}
+
+@keyframes animate2
+{
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: -1000px;
+  }
+}
+
+@keyframes animate2
+{
+  0%
+  {
+    background-position-x: 0;
+  }
+  100%
+  {
+    background-position-x: -1000px;
+  }
+}
